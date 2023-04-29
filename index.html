@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MN Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="start-screen">
+        <h1 class="title text-light">MN Quiz</h1>
+        <ol>
+            <li>Se le plantearán 6 problemas uno tras otro.</li>
+            <li>Se concederán puntos por respuesta correcta y tiempo en responderla.</li>
+            <li>Cada pregunta tiene cuatro opciones. Sólo puede elegir una opción.</li>
+            <li>El resultado se dará a conocer al final del quiz.</li>
+        </ol>
+        <form id="form">
+            <input id="userid" type="text" placeholder="Nombre de usuario" />
+        </form>
+        <button id="start-button">Iniciar</button>
+    </div>
+    <div id="display-container">
+        <h1 class="title">MN Quiz</h1>
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1/6</span>
+            </div>
+            <div class="timer-div">
+                <img src="timer-icon.svg" />
+                <span class="time-left">30:00</span>
+            </div>
+        </div>
+        <div id="container">
+        </div>
+        <button id="next-button">Siguiente</button>
+        <footer id="footer"></footer>
+    </div>
+    <div class="score-container hide">
+        <h1 class="title text-light">MN Quiz</h1>
+        <p id="username"></p>
+        <p id="user-score">Puntaje</p>
+        <p id="correct-answers"></p>
+        <p id="incorrect-answers"></p>
+        <button id="restart">Reiniciar</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
